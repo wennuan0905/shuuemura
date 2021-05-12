@@ -1,0 +1,470 @@
+
+.layui-carousel-ind{
+  background-color: #000;
+  top: 0px;
+  height: 56px;
+  line-height: 56px;
+  bottom: 0;
+}
+.layui-carousel-ind ul{
+  height: 40px;
+  line-height: 56px;
+  
+}
+.layui-carousel-ind ul li{
+  width: 13px;
+  height: 13px;
+  
+}
+.layui-carousel{
+  height: 421px;
+  width: 100%;
+
+}
+.shouye-lunbo{
+  height: 421px;
+}
+.shouye-lunbo  img{
+  width: 100%;
+  height: 100%;
+}
+.fenlei{
+ width: 100%;
+ height: 597px;
+ background-color: #000; 
+ position: relative;
+ top: 185px;
+ /* padding-bottom: 160px; */
+}
+.fenlei-lizi{
+  width: 100%;
+  height: 482px;
+  padding-top: 60px;
+  padding-bottom: 55px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.fenlei-lizi-item{
+  width: 283px;
+  /* height: 482px; */
+  background-color: #000;
+}
+.fenlei-lizi-img{
+  /* margin-top: 27px; */
+  margin-bottom: 40px;
+
+}
+.fenlei-lizi-info h2{
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400px;
+}
+.fenlei-lizi-info h3{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.25;
+}
+.fenlei-lizi-info a{
+  width: 138px;
+  height: 29px;
+  padding: 4px 35px 0 20px;
+  border: 1px solid transparent;
+  border-radius: 29px;
+  background-color: #b90220;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  text-align: left;
+  margin-top: 25px;
+  position: relative;
+}
+.fenlei-lizi-info a span{
+  float: left;
+}
+.icon-go{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(../img/arrow-white-right.aaa011f2.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 24px;
+  float: right;
+}
+.fenlei-lizi-info a:hover .fenlei-lizi-info a{
+  background-color: #fff;
+  color: #b90220;
+  border: #b90220 solid 1px;
+}
+.mingxingchanpin{
+  height: 570px;
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+  top: 170px;
+  margin-bottom: 170px;
+}
+.mingxingchanpin1{
+  width: 1280px;
+  height: 100%;
+  margin: auto;
+}
+.mingxingchanpin-left{
+  width: 75%!important;
+  height: 100%;
+  /* background-color: #2d2d2d; */
+  float: left;
+}
+.mingxingchanpin-right{
+  width: 25%!important;
+  height: 100%;
+  float: right;
+  background-color: #1799da;
+}
+.mingxingchanpin-right img{
+  width: 100%;
+}
+.mingxingchanpin-left-title{
+  width: 362px;
+  height: 45px;
+  padding: 50px 0;
+  margin-left: 48px;
+}
+.title-img{
+  display: inline-block;
+  width: 175px;
+  margin-right: 56px;
+  float: left;
+}
+.title-img img{
+  width: 175px;
+}
+.mingxingchanpin-left-title h3{
+  /* display: inline-block; */
+  text-decoration: underline;
+  /* vertical-align: super; */
+  font-weight: 400;
+  width: 135px;
+  float: right;
+  font-size: 16px;
+  position: relative;
+  top: -23px;
+  /* vertical-align: text-bottom; */
+}
+.mingxingchanpin-box{
+  width: 902px;
+  height: 398px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+.mingxingchanpin-box-item{
+  width: 225px;
+  height: 388px;
+ 
+}
+.mingxingchanpin-box-item-top{
+  width: 225px;
+  height: 199px;
+  text-align: center;
+
+}
+.mingxingchanpin-box-item-top img{
+  width: 195px;
+  height: 195px;
+  margin: auto;
+}
+.product-name{
+  font-size: 16px;
+  padding: 0 10px;
+  text-align: center;
+  /* width: 205px; */
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #232323;
+  font-weight: 700;
+}
+.title{
+  height: 25px;
+  line-height: 25px;
+  padding: 0 10px;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.default-rate{
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  height: 20px;
+}
+.rate{
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/demo.d049a93e.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 16px;
+  opacity: .3;
+  display: inline-block;
+}
+.btn-wrap{
+  height: 62px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  position: relative;
+}
+.buy-box-btn{
+  position:absolute;
+  top: 70px;
+  left: -250px;
+}
+.box-warp{
+  width: 100%;
+  background-color: #fff;
+  height: 466px;
+}
+.box-warp-img{
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+}
+.box-warp-img img{
+  width: 100%;
+}
+.xinpin{
+  height: 297px;
+  background-color: #fff;
+  width: 100%;
+}
+.xinpin-box{
+  width: 1142px;
+  height: 100%;
+  padding-left: 69px;
+  padding-right: 69px;
+  margin-bottom: 20px;
+  max-width: 1280px;
+  overflow: hidden;
+}
+.xinpin-box-title{
+  margin: 40px 0;
+  padding-left: 50px;
+  margin-left: 56px;
+  display: flex;
+}
+.xinpin-box-title h3:first-child{
+  font-size: 28px;
+  margin-right: 56px;
+}
+.xinpin-box-title h3:last-child{
+  text-decoration: underline;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.xinpin-box-neirong{
+  width: 100%;
+  height: 180px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.xinpin-box-item{
+  width: 380px;
+  height: 150px;
+  padding-bottom: 30px;
+  
+}
+.image-wrapper{
+  width: 150px;
+  height: 150px;
+  float: left;
+  /* position: relative; */
+}
+.image-wrapper img{
+  width: 100%;
+  height: 100%;
+}
+.xinpng-box-item-right{
+  width: 180px;
+  height: 100%;
+  padding-left: 10px;
+  float: right;
+
+}
+.text-line-content{
+  width: 100%;
+  height: 58px;
+  padding-bottom: 10px;
+}
+.text-line-content .title{
+  width: 100%;
+  font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  line-height: 24px; 
+  text-align: left;
+  color: #000;
+}
+.text-line-content:last-child{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.rate-wrap{
+  width: 180px;
+  height: 20px;
+}
+#xinpin-box-warp>.default-rate{
+  width: 100px;
+  /* padding-right: 10px; */
+  text-align: left;
+  float: left;
+  
+}
+#xinpin-box-warp>.default-rate>.seled{
+width: 16PX;
+height: 16px;
+background-size: 12px;
+background-position: 50%;
+margin-right: 0;
+z-index: 666;
+}
+.rate-wrap span{
+  display: inline-block;
+  width: 39px;
+  height: 20px;
+  padding-left: 10px;
+  border-left: 1px solid #5a5a5a;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.xinpng-box-item-right{
+  position: relative;
+}
+.xinpng-box-item-right .buy-box-btn{
+  position: absolute;
+  top: 50px;
+  left: -300px;
+}
+.join{
+  max-width: 1280px;
+  height: 310px;
+  margin: 0 auto;
+  
+}
+.join-img{
+  width: 640px;
+  height: 100%;
+  float: left;
+}
+.join-img img{
+  width: 100%;
+}
+.join-backg{
+  float: right;
+ 
+  background-image: url(../img/footer-newsletter-bg.e0e0d7f3.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto;
+  
+}
+.join-form-content{
+  width: 447px;
+  height: 167px;
+  margin-top: 63px;
+  margin-bottom: 42px;
+  /* float: right; */
+  margin-left: 33px;
+  float: left;
+ 
+}
+.join-form-content:first-child{
+  width: 100%;
+  height: 70px;
+
+}
+.join-form-content h3{
+  font-size: 18px;
+  margin-bottom: 28px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.join-form-content p{
+  color: #aaa;
+  font-size: 14px;
+}
+.join-input{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  position: relative;
+}
+.default-input-border{
+  /* flex: 1; */
+  width: 377px;
+  height: 100%;
+  float: left;
+}
+.default-input-border input{
+  line-height: 38px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #333;
+  text-indent: 0;
+  width: 100%;
+  color: #333;
+}
+.join-input .dingyue-box-btn{
+  position: absolute;
+  top: 55px;
+  width: 28px;
+  height: 35px;
+  padding: 0 20px;
+  left: 80px;
+
+}
+.default-form .dingyue-box-xieyi{
+  /* display: none; */
+  width: 457px;
+  height: 38px;
+  margin-top: 17px;
+  display: flex;
+  float: left;
+  font-size: 14px;
+}
+.default-form #dingyue-box-xieyi{
+  position: relative;
+  top: 0px;
+  left: -15px;
+}

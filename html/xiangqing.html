@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>植村秀</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/xiangqing.css">
+    <!-- <link rel="stylesheet" href="../css/family-pc.css">
+    <link rel="stylesheet" href="../css/family-pid.css" media="all and (max-width:1279px)"> -->
+   
+    <!-- <link rel="stylesheet" href="../css/xiangqing.css"> -->
+    
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="header-top-left">
+                <div class="quanbu">
+                    <span>全部产品</span>
+
+                </div>
+                <div class="zhuangui"><span>专柜查询</span> </div>
+            </div>
+            <div class="header-top-right">
+                <div class="bangzhu top-style">
+                    <span>帮助中心</span>
+                    <div class="bangzhu-box top-xiala">
+                        <div class="bangzhu-box-left">
+                            <h2>如何获得我们的帮助</h2>
+                            <ul>
+                                <li><a href="">常见问题</a></li>
+                                <li><a href="">使用条款</a></li>
+                                <li><a href="">隐私声明</a></li>
+                                <li><a href="">政策</a></li>
+                                <li><a href="">知识版权和产权</a></li>
+                                <li><a href="">网站地图</a></li>
+                            </ul>
+                        </div>
+                        <div class="bangzhu-box-right">
+                            <h3 style="font-size: 20px;">联系我们</h3>
+                            <p>在线客服：周一-周日早上9点-晚上24点</p>
+                            <p>电话客服：周一-周五早上9点-下午18点 致电400-820-6499</p>
+                            <div class="bangzhu-box-right-shubiao">
+                                <div class="cebiantanchuang-shubiao bangzhu-box-right-shubiao1">在线咨询</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dingyue top-style">
+                    <span>订阅电子杂志</span>
+                    <div class="dingyue-box top-xiala">
+                        <div class="dingyue-box-left">
+                            <h2>订阅电子杂志</h2>
+                            <p><span>输入您的邮箱地址</span><span style="color:#b90220;">*</span></p>
+                            <div class="dingyue-box-left-ipt">  <input type="text">
+                            </div>
+                            <div class="cebintanchuang-box-xieyi dingyue-box-xieyi">
+                                <input type="checkbox" name="" id="dingyue-box-xieyi">
+                                我同意依照本<a target="_blank" href="https://policy.lorealchina.com/termsofusewebsite">使用条款</a>和<a
+                                    target="_blank"
+                                    href="https://policy.lorealchina.com/privacypolicy">隐私政策</a>对我的个人信息进行收集和使用；我已阅读并确认被给予充分机会理解该<a
+                                    target="_blank" href="https://policy.lorealchina.com/termsofusewebsite">使用条款</a>和<a
+                                    target="_blank" href="https://policy.lorealchina.com/privacypolicy">隐私政策</a>的内容。
+    
+                            </div>
+                            <div class="bangzhu-box-right-shubiao">
+                                <div class="cebiantanchuang-shubiao bangzhu-box-right-shubiao1 dingyue-box-btn">订阅</div>
+                            </div>
+                        </div>
+                        <div class="dingyue-box-right">
+                            <h3>您的权益</h3>
+                            <p>报名参加我们的电子邮件通讯，享受我们的会员特权</p>
+                            <ul class="text-list"><li >了解新产品和活动信息</li><li >获取潮流妆容技巧</li><li >尊奢会员专属礼遇</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="login top-style">
+                    <span>登录与注册</span>
+                    <div class="top-xiala login-item">
+                        <div class="login-box">
+                            <div class="login-box-left">
+                                <div class="login-tab-btn">
+                                    <div>密码登录</div>
+                                    <div>验证码登录</div>
+                                </div>
+                                <div class="login-tab-mima">
+                                    <p>
+                                        <span>邮箱/手机</span>
+                                        <span style="color:#b90220;">*</span>
+                                    </p>
+                                    <div class="dingyue-box-left-ipt denglu-box-left-ipt ">  
+                                        <input type="text" class="login-mima-ipt">
+                                    </div>
+                                    <p>
+                                        <span>您的密码</span>
+                                        <span style="color:#b90220;">*</span>
+                                    </p>
+                                    <div class="dingyue-box-left-ipt denglu-box-left-ipt">  
+                                        <input type="text " class="login-mima-ipt">
+                                    </div>
+                                    <div class="login-tab-wangjimima">
+                                        <span>
+                                            <input type="checkbox" name="" id="wangjimima-box-xieyi">记住用户名
+                                        </span>
+                                        <a href="">忘记密码</a>
+                                    </div>
+                                    <div class="bangzhu-box-right-shubiao " id="denglu-box-btn1">
+                                        <div class="cebiantanchuang-shubiao bangzhu-box-right-shubiao1 denglu-box-btn">登录</div>
+                                    </div>
+                                    <p class="err-msg" style="display: none;">对不起，登录失败。请检查你是否输入有误，请再试一遍。</p>
+                                </div>
+                                <div class="login-tab-yanzhengma">
+                                    <p><span>您的手机</span><span style="color:#b90220;">*</span></p>
+                                    <div class="dingyue-box-left-ipt denglu-box-left-ipt">  <input type="text">
+                                    </div>
+                                    <p><span>短信验证码</span><span style="color:#b90220;">*</span></p>
+                                    <div class="dingyue-box-left-ipt denglu-box-left-ipt">  <input type="text">
+                                    </div>
+                                    <div class="bangzhu-box-right-shubiao">
+                                        <div class="cebiantanchuang-shubiao bangzhu-box-right-shubiao1 yanzhengma-box-btn">发送</div>
+                                        <p class="item-msg" style="display: none;">短信已经成功发送！(60秒后) 重新获取短信</p>
+                                    </div>
+                                    <div class="cebintanchuang-box-xieyi dingyue-box-xieyi">
+                                        <input type="checkbox" name="" id="login-box-xieyi">
+                                        我同意依照本<a target="_blank" href="https://policy.lorealchina.com/termsofusewebsite">使用条款</a>和<a
+                                            target="_blank"
+                                            href="https://policy.lorealchina.com/privacypolicy">隐私政策</a>对我的个人信息进行收集和使用；我已阅读并确认被给予充分机会理解该<a
+                                            target="_blank" href="https://policy.lorealchina.com/termsofusewebsite">使用条款</a>和<a
+                                            target="_blank" href="https://policy.lorealchina.com/privacypolicy">隐私政策</a>的内容。
+            
+                                    </div>
+                                    <div class="bangzhu-box-right-shubiao">
+                                        <div class="cebiantanchuang-shubiao bangzhu-box-right-shubiao1 yanzhengmalogin-box-btn">登录</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login-box-center">
+                                <h3>使用合作网站账号</h3>
+                                <div class="login-box-center-login">
+                                    <div class="icon wechat">微信</div>
+                                    <div class="icon alipay">支付宝</div>
+                                </div>
+                            </div>
+                            <div class="login-box-right">
+                                <h2>创建新账号</h2>
+                                <p>注册成为植村秀官网会员，下单流程更流畅，并可查看您的订单记录，</p>
+                                <p>追踪订单物流，第一时间获取官网最新资讯</p>
+                                <div class="bangzhu-box-right-shubiao">
+                                    <div class="cebiantanchuang-shubiao bangzhu-box-right-shubiao1 zhuce-box-btn">立即注册</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="cart top-style">
+                    <span>
+                        购物袋<span>(3)</span>
+                    </span>
+                    <div class="cart-box top-xiala"></div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="header-bar">
+                <div class="header-bar-center">
+                    <div class="header-logo"></div>
+                    <div class="header-bar-list">
+                        <img src="../img/20190716navbanner.jpg" alt=""
+                            style="padding-top: 17px; padding-bottom: 17px;">
+                        <div class="star-chanpin">
+                            <span>明星产品</span>
+                            <div class="star-chanpin-box">
+
+                            </div>
+                        </div>
+                        <div class="vip-zunxiang">
+                            <span>会员尊享</span>
+                            <div class="vip-zunxiang-box"></div>
+                        </div>
+                        <div class="bar-caizhuang">
+                            <span>彩妆</span>
+                            <div class="bar-caizhuang-box"></div>
+                        </div>
+                        <div class="bar-hufu">
+                            <span>护肤</span>
+                            <div class="bar-hufu-box"></div>
+                        </div>
+                        <div class="bar-gongju">
+                            <span>工具</span>
+                            <div class="bar-gongju-box"></div>
+                        </div>
+                        <div class="bar-pinpaigushi">
+                            <span>品牌故事</span>
+                        </div>
+                    </div>
+                    <div class="header-bar-search">
+                        <span>柔雾唇膏</span>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="header-buttom">
+                <img src="../img/0308-PC.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="body">
+        <div class="product-box">
+            <div class="product-box-left">
+                <div class="product-box-img">
+                    <div class="img-box">
+                        <div id="box1">
+                            <img src="../img/cny琥珀油.jpg">
+                            <div id="mark">
+                            </div>
+                        </div>
+                        <div id="box2">
+                            <img src="../img/cny琥珀油.jpg">
+                        </div>
+                    </div>
+                    <div class="img-box-shuoming">琥珀养肤洁颜油</div>
+                </div>
+                <div class="icon-heart"></div>
+            </div>
+            <div class="product-box-right">
+
+                <div class="detail-info-text">
+                    <h1 class="product-name">
+                        琥珀养肤洁颜油
+                    </h1>
+                    <h2  class="product-subtitle">
+                        ULTIME8
+                    </h2>
+                    <div class="product-review-main">
+                        <div class="default-rate is-readonly" disabled="disabled">
+                            <div class="rate seled"></div>
+                            <div class="rate seled"></div>
+                            <div class="rate seled"></div>
+                            <div  class="rate seled"></div>
+                            <div class="rate"></div>
+                        </div>
+                            
+                        <span class="product-review">
+                            0条评论
+                        </span><!---->
+                    </div>
+                    <div class="product-description">
+                        <span  class="introduction">
+                            臻选8大植物精萃，提供SPA般羊绒丰润质地，日复一日，给予肌肤洁净、滋润、柔软、平滑、光泽、透亮、弹性、匀净8*大多方位养护。
+                    8*：数据来源于公司内部消费者使用测试，75位亚洲女性使用4周后结果。
+                </span>
+                <span class="more">
+                    查看更多&gt;
+                </span>
+                    </div>
+                </div>
+                <div class="variant-box">
+                    <div class="title-main">
+                        <span class="title">选择颜色</span><!---->
+                    </div>
+                    <div class="variant-carousel"
+                    >
+    
+                    <div  class="btn left disabled"></div>
+                    <ul  style="max-width: 288px;">
+                        <li title="450ml (新年限定版)" class="icon-square" style="transform: translateX(0px);">
+                            <div  class="not-active">
+                                <img  class="" src="../img/cny琥珀油.jpg" lazy="loaded">
+                            </div>
+                        </li>
+                        <li  title="450ml" class="icon-square" style="transform: translateX(0px);">
+                            <div  class="not-active">
+                                <img  class="" src="../img/450mlicon414.jpg" lazy="loaded">
+                            </div>
+                        </li>
+                        <li  title="150ml" class="icon-square" style="transform: translateX(0px);">
+                            <div  class="active">
+                                <img  class="" src="../img/450mlicon414.jpg" lazy="loaded">
+                            </div>
+                        </li>
+                    </ul>
+                    <div  class="btn right disabled">
+    
+                    </div>
+                    </div>
+                    <div  class="color-wrap">
+                        <div  class="color-box">
+                            <img  src="https://ecuniplatform-static.shuuemura.com.cn/medias/150mlicon414.jpg_4d3851366dda4f878804b72dc52a8b07/150mlicon414.jpg.jpg" class="color-image">
+                            <span  class="color-text">150ml</span>
+                        </div><!---->
+                        <ul  class="color-box-ul show-color-box-ul">
+                            <li >
+                                <div >
+                                    <img  src="https://ecuniplatform-static.shuuemura.com.cn/793872810245193728/cny琥珀油_9bec802c068a473c99d4634df86f2904/cny琥珀油.jpg" class="color-image">
+                                    <span  class="color-text">450ml (新年限定版)</span>
+                                </div>
+                            </li>
+                            <li >
+                                <div >
+                                    <img  src="https://ecuniplatform-static.shuuemura.com.cn/medias/450mlicon414_980b099e8a374fa69b3fe6f62a74684a/450mlicon414.jpg" class="color-image">
+                                    <span  class="color-text">450ml</span>
+                                </div>
+                            </li>
+                            <li >
+                                <div >
+                                    <img  src="https://ecuniplatform-static.shuuemura.com.cn/medias/150mlicon414.jpg_4d3851366dda4f878804b72dc52a8b07/150mlicon414.jpg.jpg" class="color-image">
+                                    <span  class="color-text">
+                                        150ml</span>
+                                    </div>
+                                </li>
+                            </ul><!---->
+                    </div>
+                    <div class="button-operation">
+                        <div class="count-main count-shuliang">
+                            <p>数量：1</p>
+                        </div>
+                        <ul class="count-shuliang-block">
+                            <li class="isSelected">
+                                <p>数量：1</p>
+                            </li>
+                            <li class="">
+                                <p>数量：2</p>
+                            </li>
+                            <li class="">
+                                <p>数量：3</p>
+                            </li>
+                            <li class="">
+                                <p>数量：4</p>
+                            </li>
+                            <li class="">
+                                <p>数量：5</p>
+                            </li>
+                        </ul>
+                        <p class="price price-xiangqing">¥390</p>
+                        <div class="bangzhu-box-right-shubiao ">
+                            <div class="cebiantanchuang-shubiao bangzhu-box-right-shubiao1 buy-box-btn">加入购物袋</div>
+                        </div>
+                    </div>
+                    <div class="product-promotion"><div class="editor-viewer"><table class="" style="width: auto;">
+                        <tbody>
+                          <tr>
+                            <td>
+                             <font color="#000000"><b>&nbsp;【春日焕颜&nbsp;宠粉好礼】</b></font><br>
+                             <font color="#000000">☆重磅上新！植村秀缎光定妆粉饼，随行补妆定妆！</font><br>
+                             <font color="#000000">☆明星小方瓶底妆家族焕新登场，开启持色持妆新时代</font><br>
+                             <font color="#000000">☆2.19-2.26会员下单享奢宠粉礼遇，至高买1赠7</font>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-bar">
+            <div class="tab-bar-left">
+                <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+
+                    <ul class="layui-tab-title">
+
+                      <li class="layui-this">描述</li>
+                      <li>使用方法</li>
+                    
+                    </ul>
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                            臻选8大植物精萃，提供SPA般羊绒丰润质地， 日复一日，给予肌肤洁净、滋润、柔软、平滑、光泽、透亮、弹性、匀净8*大多方位养护。
+                            <br>
+                              
+                            8*：数据来源于公司内部消费者使用测试，75位亚洲女性使用4周后结果。
+                        </div>
+                        <div class="layui-tab-item">
+                            <b>适量取用：</b>
+                        保持手部与脸部干燥，按压瓶口4下取适量洁颜油于手心 
+                        <br>
+                        <b>柔和按摩：</b>
+                        将洁颜油均匀涂抹于面部及眼部，轻柔打圈，在鼻翼两侧、额头等毛孔粗大部位额外按摩 
+                        <br>
+                
+                        （建议增加1分钟按摩圈圈操：下颚打圈往上走，提拉紧致；脸颊打圈往外走，光采细滑；额头打圈往下走，抚平细纹。） 
+                        <br>
+                        <b>温水乳化：</b>
+                        用温水沾湿双手，继续按摩，可重复沾湿双手按摩直至洁颜油乳化变白，触感仿佛柔滑乳液 
+                        <br>
+                        <b>彻底冲净：</b>
+                        使用大量温水将面部冲洗干净，特别注重多冲洗额头发际线及下颚部位。无需2次洁面清洁
+                        <br>
+                    </div>
+    
+                </div>
+                  </div>      
+            </div>
+            <div class="tab-bar-box">
+                <div class="tab-bar-img">
+                    <img src="../img/20210312-黄金养肤洁颜油-750_01.jpg" alt="">
+                </div>
+                <div class="tab-bar-img">
+                    <img src="../img/20210312-黄金养肤洁颜油-750_02.jpg" alt="">
+                </div>
+                <div class="tab-bar-img">
+                    <img src="../img/20210312-黄金养肤洁颜油-750_03.jpg" alt="">
+                </div>
+                <div class="tab-bar-img">
+                    <img src="../img/20210312-黄金养肤洁颜油-750_04.jpg" alt="">
+                </div>
+                <div class="tab-bar-img">
+                    <img src="../img/20210312-黄金养肤洁颜油-750_05.jpg" alt="">
+                </div>
+                <div class="tab-bar-img">
+                    <img src="../img/20210312-黄金养肤洁颜油-750_06.jpg" alt="">
+                </div>
+                <div class="tab-bar-img">
+                    <img src="../img/20210312-黄金养肤洁颜油-750_07.jpg" alt="">
+                </div>
+                <div class="tab-bar-img">
+                    <img src="../img/20210312-黄金养肤洁颜油-750_08.jpg" alt="">
+                </div>
+                <div class="tab-bar-img">
+                    <img src="../img/20210312-黄金养肤洁颜油-750_09.jpg" alt="">
+                </div>
+                <div class="tab-bar-img">
+                    <img src="../img/20210312-黄金养肤洁颜油-750_10.jpg" alt="">
+                </div>
+                <div class="tab-bar-img">
+                    <img src="../img/20210312-黄金养肤洁颜油-750_11.jpg" alt="">
+                </div>
+                <div class="tab-bar-img">
+                    <img src="../img/20210312-黄金养肤洁颜油-750_12.jpg" alt="">
+                </div>
+                <div class="tab-bar-img">
+                    <img src="../img/20210312-黄金养肤洁颜油-750_13.jpg" alt="">
+                </div>
+                <div class="tab-bar-img">
+                    <img src="../img/琥珀油净含量-MB.jpg" alt="">
+                </div>
+            </div>
+            <div class="tab-bar-right">
+                <h4 >官网礼遇</h4>
+                <div  class="line pl50">
+                    <img  src="https://ecuniplatform-uat-static-shuuemura.e-loreal.cn/medias/账户安全_25173c8416ed48c6aac87035a84d946b/账户安全.png">
+                    <b>产品承诺</b>
+                    <span>100%官方正品保证</span>
+                </div>
+                <div  class="line pl50">
+                    <img src="https://ecuniplatform-uat-static-shuuemura.e-loreal.cn/medias/积分 (2)_d0166bcc36734aab8a95b98467fcaa9e/积分 (2).png">
+                    <b>独家臻礼</b>
+                    <span>专享官网特惠礼遇</span>
+                </div>
+                <div class="line pl50">
+                    <img  src="https://ecuniplatform-uat-static-shuuemura.e-loreal.cn/medias/充值赠送_935f31e3fd8f4f10b60f05e08dd07464/充值赠送.png">
+                    <b>支付方式</b>
+                    <span>支持多种支付方式</span>
+                </div>
+            </div>
+        </div>
+        <div class="cainixihuan">
+            <h3>您可能会喜欢</h3>
+            
+                <div class="xihuan-box-neirong">
+                    <div class="xihuan-box-item">
+                        <div class="image-wrapper">
+                            <div  alt="琥珀养肤洁颜油" class="image-wrap product-card-img">
+                                <img  src="https://ecuniplatform-static.shuuemura.com.cn/793872810245193728/cny琥珀油_9bec802c068a473c99d4634df86f2904/cny琥珀油.jpg">
+                            </div>
+                        </div>
+                        <div class="xinpng-box-item-right">
+                            <div class="text-line-content">
+                                <b class="title">琥珀养肤洁颜油</b>
+                                <b >一步卸净 细腻透亮肌</b>
+                            </div>
+                            <div  class="rate-wrap" id="xihuan-box-warp">
+                                <div class="default-rate is-readonly" disabled="disabled">
+                                    <div class="rate seled">
+
+                                    </div>
+                                    <div class="rate seled"></div>
+                                    <div class="rate seled"></div>
+                                    <div class="rate seled"></div>
+                                    <div  class="rate seled"></div>
+                                </div>
+                                <span  class="price">￥890</span>
+                             </div>
+                             <div class="bangzhu-box-right-shubiao">
+                                <div class="cebiantanchuang-shubiao bangzhu-box-right-shubiao1 buy-box-btn">立即购买</div>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="xihuan-box-item">
+                        <div class="image-wrapper">
+                            <div  alt="琥珀养肤洁颜油" class="image-wrap product-card-img">
+                                <img  src="https://ecuniplatform-static.shuuemura.com.cn/793872810245193728/cny琥珀油_9bec802c068a473c99d4634df86f2904/cny琥珀油.jpg">
+                            </div>
+                        </div>
+                        <div class="xinpng-box-item-right">
+                            <div class="text-line-content">
+                                <b class="title">琥珀养肤洁颜油</b>
+                                <b >一步卸净 细腻透亮肌</b>
+                            </div>
+                            <div  class="rate-wrap" id="xihuan-box-warp">
+                                <div class="default-rate is-readonly" disabled="disabled">
+                                    <div class="rate seled">
+
+                                    </div>
+                                    <div class="rate seled"></div>
+                                    <div class="rate seled"></div>
+                                    <div class="rate seled"></div>
+                                    <div  class="rate seled"></div>
+                                </div>
+                                <span  class="price">￥890</span>
+                             </div>
+                             <div class="bangzhu-box-right-shubiao">
+                                <div class="cebiantanchuang-shubiao bangzhu-box-right-shubiao1 buy-box-btn">立即购买</div>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="xihuan-box-item">
+                        <div class="image-wrapper">
+                            <div  alt="琥珀养肤洁颜油" class="image-wrap product-card-img">
+                                <img  src="https://ecuniplatform-static.shuuemura.com.cn/793872810245193728/cny琥珀油_9bec802c068a473c99d4634df86f2904/cny琥珀油.jpg">
+                            </div>
+                        </div>
+                        <div class="xinpng-box-item-right">
+                            <div class="text-line-content">
+                                <b class="title">琥珀养肤洁颜油</b>
+                                <b >一步卸净 细腻透亮肌</b>
+                            </div>
+                            <div  class="rate-wrap" id="xihuan-box-warp">
+                                <div class="default-rate is-readonly" disabled="disabled">
+                                    <div class="rate seled">
+
+                                    </div>
+                                    <div class="rate seled"></div>
+                                    <div class="rate seled"></div>
+                                    <div class="rate seled"></div>
+                                    <div  class="rate seled"></div>
+                                </div>
+                                <span  class="price">￥890</span>
+                             </div>
+                             <div class="bangzhu-box-right-shubiao">
+                                <div class="cebiantanchuang-shubiao bangzhu-box-right-shubiao1 buy-box-btn">立即购买</div>
+                        </div>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot-top">
+            <div class="foot-top-box">
+                <img src="../img/授权正品.png" alt="">
+                <p>100%官方正品</p>
+            </div>
+            <div class="foot-top-box">
+                <img src="../img/充值.png" alt="">
+                <p>支持多种支付方式</p>
+            </div>
+            <div class="foot-top-box">
+                <img src="../img/我的抢单.png" alt="">
+                <p>专享官网特惠礼遇</p>
+            </div>
+
+            <div class="foot-top-box">
+                <img src="../img/账号.png" alt="">
+                <p>联系我们</p>
+                <p>电话400-820-6499</p>
+            </div>
+        </div>
+        <div class="foot-center">
+            <div class="foot-center-text">
+                <ul class="foot-center-box">
+                    <li> <a href="">护肤</a></li>
+                    <li><a href="">洁颜油</a> </li>
+                    <li><a href="">眼唇护理</a></li>
+                    <li><a href="">面部喷雾</a></li>
+                </ul>
+                <ul class="foot-center-box">
+
+                    <li><a href="">眼部</a></li>
+                    <li><a href="">眉妆</a></li>
+                    <li><a href="">眼影</a></li>
+                    <li><a href="">眼线</a></li>
+                </ul>
+                <ul class="foot-center-box">
+
+                    <li><a href="">唇部</a></li>
+                    <li><a href="">唇膏</a></li>
+                    <li><a href="">唇釉</a></li>
+
+                </ul>
+                <ul class="foot-center-box">
+                    <li><a href="">脸部</a></li>
+                    <li><a href="">粉底系列</a></li>
+                    <li><a href="">遮瑕系列</a></li>
+                    <li><a href="">隔离系列</a></li>
+                </ul>
+                <ul class="foot-center-box">
+                    <li><a href="">工具</a></li>
+                    <li><a href="">粉底刷</a></li>
+                    <li><a href="">刷具套餐</a></li>
+                    <li><a href="">睫毛夹</a></li>
+                </ul>
+                <ul class="foot-center-box">
+                    <li><a href="">帮助中心</a></li>
+                    <li><a href="">常见问题</a></li>
+                    <li><a href="">网站地址</a></li>
+
+                </ul>
+                <ul class="foot-center-box-max foot-center-box">
+                    <li>安全支付保障</li>
+                    <li>
+                        <div class="yinlian"></div>
+                        <div class="yinlian"></div>
+                        <div class="yinlian"></div>
+
+                    </li>
+                    <li>关注我们</li>
+                    <div class="foot-guanzhu">
+                        <div class="foot-guanzhu-box1 foot-guanzhu-box">
+                            <a href="https://weibo.com/shuuemurachina" target="_blank"><img
+                                    src="../img/footer_icon_sina.b0bbc7b3.png" alt=""></a>
+                        </div>
+                        <div class="foot-guanzhu-box foot-guanzhu-box2">
+                            <img src="../img/footer_icon_wechat.0e91c114.png" alt="" class="mouse-item">
+                            <img src="../img/wechat_qrcode.3a46222f.jpg" class="mouse-item-out" alt="">
+                        </div>
+                        <div class="foot-guanzhu-box foot-guanzhu-box2">
+                            <img src="../img/footer_icon_mbmall.3f403da4.png" alt="" class="mouse-item">
+                            <img src="../img/mobile_site_qrcode.782137e6.jpg" alt="" class="mouse-item-out">
+                        </div>
+                        <div class="foot-guanzhu-box1 foot-guanzhu-box">
+                            <a href="https://shuuemura.tmall.com" target="_blank"><img
+                                    src="../img/footer_icon_tmall.2b211a6a.png" alt=""></a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <p>国家药监局提示您：宣称用于祛斑美白、防晒、染发、烫发等的化妆品为特殊用途化妆品，产品标签上应标注“国妆特字”或者“国妆特进字”的标准文号。</p>
+            <p><a target="_blank" href="https://policy.lorealchina.com/termsofusewebsite">使用条款</a> | <a
+                    target="_blank" href="https://policy.lorealchina.com/cookiespolicy">Cookies政策</a> | <a
+                    target="_blank" href="https://policy.lorealchina.com/privacypolicy">隐私政策</a></p>
+            <p><a target="_blank"
+                    href="https://wap.scjgj.sh.gov.cn/businessCheck/verifKey.do?showType=extShow&amp;serial=9031000020170518090333000001788070-SAIC_SHOW_310000-20171114174223559026&amp;signData=MEUCIQDLZdL7sza2jbilrnwZYAiBWzm8WCQ0CK/PId7T5tr8mAIgHkcl6jc258Yg0CBRp7kQ0i5r6koIqmoSsZN3tyZ9aJk="
+                    class="img"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAD8klEQVQ4ja2VXUybVRjHf/1u6Qe0gMCAloIwQUELjLALFsSQxWCmU7NFExdNTLjSxUy92YXJnF6YmJjsxsRE44Uky/yIiUaNiRvb4hLG52DAWljoBxQob/v27RdtaV8vmnVDMNx47s45z/M75/9/zoeCA9rk2IgMIAhBystr6Ox5XXFQzn8GPIC5P/yI5OgSxm4n6iYH6/YI7cffwlxej+uZl/fN3zM4OTYiT7/9DoaoEstgN873hgiv+YrzvtcukZPSaF/speX8+/uC1Y92Av4FOR5dwRBVshMUqHmlk+lL35INxUitiViersdycYjIuz+SuzrF384LTI6NyP+2RPkoMBGdZmroDDtBgUNvHiX4wyR8P4d2XMA4sYnitxVUyzEqzg6Sk9JYv76HsDGzR34RurL4DUuLl5ETcVQWHdaT/SSXQ6iedaFwlmF6oR0A6ZqHrK0gUGE0Ed1cYOL6Z/K+0KS4CoDKWcO2sM3GX+OU9bowlZZSeqSR1GNadGY1mlSKbDxJ5lAp6kYH5opadAbj/jvNZFSYSmqx9Dej0SiQrnloHO6n5tgAO4/byYZi+A4b6bz6JYHPR1F4Rdo/GEaKC6yuze0PzalzbGfzJLWZwiIzK9w89zGZBpG24/2Uneqi9+xpfj8xjC1fyPHnlsgmtolsbfHHzxeKFhSr72joYMPrJlQS54EYs8nI1vw9vLdm2BICBEvdKEs1ZLOF/FBwAaVKx1Md/YTEh7YWoT73OLZqJ62uHlYtc+SkNP7LU2h+nUVnMqKIJ0jHdwqLAdahHqRMhsOtndy6foW2rlN7ofaWbja8buIZBYZjLUR+ukN1t7NgTVc5BkC5KJIMh9GvJak46mQrvc7W+n0c9lrE4O3dnk7c+ETe8LoRRR8h7wzxARt1n75KPBShcqAHq9mG8Oc84TkvMXcEy8Uh7rJMTbWdnDpHRIgg53O7oV195xVVjhZUKgN1Da3YG9tY06+j7qoiJUR3Vbb+tIuA4KWpY4Dguo+qimb0VitldX3FmOL1+uW7M3I+n0LWatkMrGIxawrSJ0WkGT/hZRGNw4j5pUaslWVsZ1RotFosBpk8ek68caXIKnoaifjZTstodXrs9U0ABFfdGPuc5CxZ/BUarE4tZqDW6UKtLGE1GEBKbmIy7BLzEFpf14zeVkk6LuK7P49WbeCJjueQwh40rVU0H3kSgLCUIZdNYHPY8XrGyO7kMVQ27oIWD384UULAMwuAwWCmqrqO2elrAEQTCjy37wIQE0OEgn42PXeQEknkbILBk1/seqX2fWRvjn4lp5ISsbCfWGSRsspy9HoLel09VXUu/P55AAafP3fgL/C/tX8ABh6iI38RS5UAAAAASUVORK5CYII=">
+                    中国工商</a><a target="_blank"
+                    href="https://beian.miit.gov.cn/#/Integrated/index">沪ICP备08100043-7号</a><a target="_blank"
+                    href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010602001532"
+                    class="img"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAEuklEQVQ4jX3Va2xTdRjH8e85PT09PWvXbu3W1RUJsAhDLuPqbYKgEVCYgAEBfSEGxWgUNfICxRiDMfpCDEqIBjURgomKCQkjyMUZ5BLBKMSBso0xLu3YpV3Xnran7ek5xze6gEOe979P/i/+z+8RuMXYdrQmd/F000/7f322oJfkBx6evL1y0qQ9glAf/b+McFOocGROx/6Dzx//ob3J1juUqwUVR4WfkUEFPa6WGh8cvbd+0dIvBVdD83+z0vBX6UrLlrUtb77XxpOP2EzxOJgn9OJSNFL3NHI6rkprnju05O0N7UtsW1MEwVu4Pi/eiMUjhdObDmzZlWLlmtE8HUnj++wciTaTRKdJauGnPGa2sm7HCrZ/b2C3ff6dbXcqNwUN+2L9leaNnbMWts7y14V4MdhK16404gg/plaEgoVQ5efES8dZrp4mdN8UHlq4b1H/sS8uxts+HDsMlPIHPHvbvPKp7uksmK6ROZNGvJJC8LtwDZjkj/fiHBVAyejEvzrJ0nlFWi6MZ+dRM+wRsu4bwME/D0WsX37cbAlukHKUa92ke8BpGjCQRxijIk/zI17LImMR79KprSyAIJDMiLiqpM1WMT5qCLx8/tDjxVisscIjQ8mFHQ4TbKwhg412bwBzZQTPOw2o6yYhVqlUTwuSzRXBtglXqxA9M2fg6olnhkDVU1Gf1gxGV+VBCXDwpIo0t5zEopGYMQ3hjyy5fb0YXYPI6xupfHUyu3ckgTIaJkpkO/vIRzsjQ6A10L0onZSYENGIzJTZtrOMI+9HaZgRxqd6yZ1LYvUVyLcm8cYGObupnY93uAg1+JlYmyIeK2AMnG8cAkUp69fSIuX97SyfZ1IyPBjNPQS++Q2x1kmxyoFVLRGcGybccpH49rNkiw6WNjnxJjrQ0hKSV3QOfWy3evthceylJjNUy+q7NDbXVrEtVo9x9RyBRAeiz41+LolWV02sIsy3ohvK/ay+u4+SN4L/TgG1YsS+6zZFrLbTNt2dGhPqu3j39WlsXD+LZm0ipA2acgkq/SK793nJoAIVvPaCwoy6Dro7gHwOq6RNHgIlf3F6yRvC6DGI9v3Fy40ulh4uo2V/jvPiJOaPv0DYHae0t5ZiUmfEOJU35l+i98QlcoaCEpSR/PI4+Kcc8trJVYmTH+zSe4oU4gZELzNmcQOukAJmAjMhkenT8Y2qhJEBiMbp2tOG7g3iGe3BXaPiq1s521X56M9DbWNkzjw1cHbzVjOv++JHe5DKbGpm12MO6Bi5LKKqoFSWIchOEic6KZkSvuljMPIkfGNnrfCGlh2+oW1y/Xos3+PWlZDlC82tw0xlMbU0qDIO2Y/shuJghmw0iTIygBIJURjMkY9ptntEZng5ODi2oXqqt8ZZEaaQsrBMCct0kO/XwLYoJlJkOvoRHE4QBPLX4jjdIqH7w0FZ1dYOA12BGYu1nG9rLhrNyo5ByqtLOIUcsmDgKAxi6zrecUHK68oR5QyST0aoqLlSkqa8Jal3PPGvM6yxWz95Jain+hcUjKuzbxtfNd7SLI/iFysltxs9zRV3lT8nVU84M9DZd1gvJQ82LPvIuj5/0xNw/fx+6msbIJG4RiAQZurMVbfM/A2JCgkxBD3v9AAAAABJRU5ErkJggg=="></a><a
+                    target="_blank"
+                    href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010602001532">沪公网安备
+                    31010602001532号</a>©L'Oreal China 欧莱雅（中国）有限公司版权所有</p>
+        </div>
+    </div>
+    <div class="cebian">
+        <div style="cursor: pointer;" class="cebian-zixun " id="cebian-zixun"> 在线<br>咨询
+        </div>
+        <div class="tel cebian-zixun"><a href="tel:400-820-6499"></a>
+            <div class="tel-icon"></div> 400-820-6499
+        </div>
+        <div class="attention mouse-item"> 关注<br> 我们
+            <div class="hover-box mouse-item-out">
+                <div class="hover-content">
+                    <div class="icon-wrap">
+                        <a target="_blank" href="https://weibo.com/shuuemurachina">
+                            <img src="../img/footer_icon_sina.b0bbc7b3.png" class="weibo-cursor">
+                        </a>
+                        <img src="../img/footer_icon_wechat.0e91c114.png">
+                    </div>
+                    <img src="../img/floating_qrcode.dc1bcc01.png" style="width: 80px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tanchuang" >
+        <div class="cebiantanchuang zhezhao" id="zixun-tanchuang">
+
+            <div class="dialog-top">
+                <div class="close guanbi"></div>
+                <div class="dialog-top-zhanwei"></div>
+            </div>
+            <div class="cebiantanchuang-box">
+                <p>为了更好地为您服务，请填写下列信息，然后点击“咨询”按钮开始与客服人员进行交谈。</p>
+                <div class="cebiantanchuang-box-center">
+                    <div class="cebiantanchuang-box-neirong">
+                        <div class="label">
+                            <span>*</span>名称
+                        </div>
+                        <div class="cebiantanchuang-box-neirong-input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="cebiantanchuang-box-neirong">
+                        <div class="label">
+                            <span>*</span>移动电话
+                        </div>
+                        <div class="cebiantanchuang-box-neirong-input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="cebiantanchuang-box-neirong">
+                        <div class="label">
+                            <span>*</span>电子邮件
+                        </div>
+                        <div class="cebiantanchuang-box-neirong-input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="cebintanchuang-box-xieyi">
+                        <input type="checkbox" name="" id="cebintanchuang-box-xieyi">
+                        我同意依照本<a target="_blank" href="https://policy.lorealchina.com/termsofusewebsite">使用条款</a>和<a
+                            target="_blank"
+                            href="https://policy.lorealchina.com/privacypolicy">隐私政策</a>对我的个人信息进行收集和使用；我已阅读并确认被给予充分机会理解该<a
+                            target="_blank" href="https://policy.lorealchina.com/termsofusewebsite">使用条款</a>和<a
+                            target="_blank" href="https://policy.lorealchina.com/privacypolicy">隐私政策</a>的内容。
+
+                    </div>
+                </div>
+                <div class="cebiantanchuang-box-btn">
+                    <div class="cebiantanchuang-box-btn-zixun cebiantanchuang-shubiao">咨询</div>
+                    <div class=" close cebiantanchuang-box-btn-quxiao cebiantanchuang-shubiao">取消</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="backscreen"></div>
+    </div>
+    <div class="tanchuang zhuce11">
+        <div class="cebiantanchuang zhezhao zhuce">
+
+            <div class="dialog-top">
+                <div class="close guanbi"></div>
+                <div class="dialog-top-zhanwei"></div>
+            </div>
+            <div class="cebiantanchuang-box zhuce-cebiantanchuang-box">
+                <h1>注册成为会员</h1>
+                <div class="login-line">我是已注册用户，前往 <a  href="javascript:;">登录</a>
+                </div>
+                <div class="cebiantanchuang-box-center">
+                    <div class="radio-wrap">
+                        <div class="label chengwei">
+                            称谓
+                        </div>
+                        <div style="width: 200px; float: left;">
+                            <div   class="default-radio-wrap"  style="padding-left: 20px; height: 14px; line-height: 14px;">
+                                <div   class="default-radio" style="height: 14px; width: 14px;">
+                                    <div   class="dot" style="height: 8px; width: 8px;">
+                                    </div>
+                                </div>
+                                <span  >男士</span>
+                            </div>
+                            <div   class="default-radio-wrap"  style="padding-left: 20px; height: 14px; line-height: 14px;">
+                                <div   class="default-radio" style="height: 14px; width: 14px;">
+                                    <div   class="dot" style="height: 8px; width: 8px;">
+                                    </div>
+                                </div>
+                                <span  >女士</span>
+                            </div>
+                            <div   class="default-radio-wrap"  style="padding-left: 20px; height: 14px; line-height: 14px;">
+                                <div   class="default-radio" style="height: 14px; width: 14px;">
+                                    <div   class="dot" style="height: 8px; width: 8px;">
+                                    </div>
+                                </div>
+                                <span  >小姐</span>
+                            </div>
+                        </div>
+                        <div   class="right-txt">
+                            （*必填项）
+                        </div>
+                    </div>
+                    <div   class="default-form-box">
+                        <div   class="form-item">
+                            <label  >您的手机号
+                                <i  >*</i>
+                            </label>
+                            <div   class="default-input text normal" autocomplete="off" >
+                                <input  placeholder="" maxlength="" type="text" class="shoujihao zhuce-ipt">
+                            </div><!----><!---->
+                            <div   class="default-form-validator-msg   yanzheng" style="display: none;"  >请输入您的手机号码 
+                            </div>
+                        </div>
+                        <div   class="form-item">
+                            <label  >姓名</label>
+                            <div   class="default-input text normal" autocomplete="off" >
+                                <input  placeholder="" maxlength="" type="text">
+                            </div>
+                        </div>
+                        <div   class="form-item">
+                            <label  >
+                                密码
+                                <i  >*</i>
+                            </label>
+                            <div   class="default-input password normal" autocomplete="off" >
+                                <input  placeholder="" maxlength="" type="password" class="mima zhuce-ipt">
+                            </div>
+                           
+                            <div   class="default-form-validator-msg yanzheng"  style="display: none;">
+                                请输入密码
+                            </div>
+                        </div>
+                        <div   class="form-item">
+                            <label  >确认密码
+                                <i  >*</i>
+                            </label>
+                            <div   class="default-input password normal" autocomplete="off" >
+                                <input  placeholder="" maxlength="" type="password" class="querenmima zhuce-ipt">
+                            </div>
+                            
+                            <div   class="default-form-validator-msg  yanzheng"  style="display: none;">请输入密码
+                              </div>
+                        </div>
+                           
+                               
+                                <div   class="default-form-validator-msg"  style="display: none;">  
+                                </div>
+                            </div>
+                            <div   style="display: none;">
+                            </div>
+                           
+                         
+                        <div   class="form-item policy-line">
+                            <div   class="default-checkbox-wrap"  style="padding-left: 20px; min-height: 18px; line-height: 18px;">
+                                <div  class="default-checkbox" style="height: 14px; width: 14px; margin-top: 2px;"></div> 我同意依照本<a   href="https://policy.lorealchina.com/termsofusewebsite">使用条款</a>和<a   href="https://policy.lorealchina.com/privacypolicy">隐私政策</a>对我的个人信息进行收集和使用；我已阅读并确认被给予充分机会理解该<a   href="https://policy.lorealchina.com/termsofusewebsite">使用条款</a>和<a   href="https://policy.lorealchina.com/privacypolicy">隐私政策</a>的内容。<i  >*</i></div></div></div>
+                   
+                  
+                    <div class="cebintanchuang-box-xieyi">
+                        <input type="checkbox" name="" id="cebintanchuang-box-xieyi">
+                        我同意依照本<a target="_blank" href="https://policy.lorealchina.com/termsofusewebsite">使用条款</a>和<a
+                            target="_blank"
+                            href="https://policy.lorealchina.com/privacypolicy">隐私政策</a>对我的个人信息进行收集和使用；我已阅读并确认被给予充分机会理解该<a
+                            target="_blank" href="https://policy.lorealchina.com/termsofusewebsite">使用条款</a>和<a
+                            target="_blank" href="https://policy.lorealchina.com/privacypolicy">隐私政策</a>的内容。
+
+                    </div>
+                </div>
+                <div class="cebiantanchuang-box-btn">
+                    <div class="cebiantanchuang-box-btn-zixun cebiantanchuang-shubiao zhuce-btn-liji">注册</div>
+                    <div class=" close cebiantanchuang-box-btn-quxiao cebiantanchuang-shubiao">取消</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="backscreen"></div>
+    </div>
+    <div class="scroll-top-wrap"> TOP </div>
+
+    <script src="../js/jquery.1.10.2.js"></script>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/axios.min.js"></script>
+    <script src="../js/xiangqing.js"></script>
+    <script src="../js/public.js"></script>
+    <script>
+        layui.use('carousel', function(){
+        var carousel = layui.carousel;
+        carousel.render({
+            elem: '#test1'
+            ,width: '100%' //设置容器宽度
+            ,arrow: 'always' //始终显示箭头
+            // ,anim: 'updown' //切换动画方式
+        });
+
+        });
+
+        //滚动页面侧边导航栏和顶部导航栏固定
+       
+
+    </script>
+</body>
+</html>

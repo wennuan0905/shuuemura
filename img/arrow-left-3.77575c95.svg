@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>左箭头</title>
+    <desc>Created with Sketch.</desc>
+    <g id="MOB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PDP" transform="translate(-11.000000, -333.000000)" fill-rule="nonzero">
+            <g id="左箭头" transform="translate(17.000000, 344.000000) rotate(-360.000000) translate(-17.000000, -344.000000) translate(5.000000, 332.000000)">
+                <rect id="Rectangle" fill="#000000" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                <path d="M6.19684567,11.5795779 L16.3782995,1.69156945 C16.6057066,1.47071606 16.9382938,1.43568155 17.1212239,1.61331634 C17.3041058,1.79092769 17.2680316,2.11395333 17.0406245,2.33480673 L7.09464252,11.994106 L17.0527458,21.6651538 C17.2801529,21.8860072 17.3162271,22.2090563 17.1333211,22.3866911 C16.9504392,22.5643258 16.6178038,22.5292679 16.3904208,22.3084379 L6.20894282,12.4203591 C6.16606041,12.3787174 6.12882437,12.3319318 6.09813679,12.2811357 C5.93684146,12.1001475 5.97755163,11.7925521 6.19684567,11.5795779 Z" id="Path" fill="#666666"></path>
+            </g>
+        </g>
+    </g>
+</svg>
